@@ -1,0 +1,120 @@
+<!DocType>
+<html>
+<head>
+<style>
+body{
+background-image:url("https://png.pngtree.com/thumb_back/fw800/background/20240308/pngtree-vintage-love-pattern-background-image_15638328.jpg");
+
+}
+.flipCard {
+  -webkit-perspective: 800;
+  -ms-perspective: 800;
+  -moz-perspective: 800;
+  -o-perspective: 800;
+   width: 400px;
+   height: 200px;
+   position: relative;
+   margin: 50px auto;
+}
+.flipCard .card.flipped {
+  transform:rotatey(-180deg);
+  -ms-transform:rotatey(-180deg); /* IE 9 */
+  -moz-transform:rotatey(-180deg); /* Firefox */
+  -webkit-transform:rotatey(-180deg); /* Safari and Chrome */
+  -o-transform:rotatey(-180deg); /* Opera */
+}
+.flipCard .card {
+  width: 100%;
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: 0.5s;
+  -moz-transform-style: preserve-3d;
+  -moz-transition: 0.5s;
+  -ms-transform-style: preserve-3d;
+  -ms-transition: 0.5s;
+  -o-transform-style: preserve-3d;
+  -o-transition: 0.5s;
+  transform-style: preserve-3d;
+  transition: 0.5s;
+}
+.flipCard .card .side {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  cursor: pointer;
+  position: absolute;
+  box-sizing: border-box;
+  z-index: 2;
+  backface-visibility: hidden;  /* W3C */
+  -webkit-backface-visibility: hidden; /* Safari & Chrome */
+  -moz-backface-visibility: hidden; /* Firefox */
+  -ms-backface-visibility: hidden; /* Internet Explorer */
+  -o-backface-visibility: hidden; /* Opera */
+  box-shadow: 0 0 10px rgba(0,0,0,0.6);
+  overflow: auto;
+}
+.flipCard .card .back {
+  background: white;
+  color: white;
+  transform:rotatey(-180deg);
+  -ms-transform:rotatey(-180deg); /* IE 9 */
+  -moz-transform:rotatey(-180deg); /* Firefox */
+  -webkit-transform:rotatey(-180deg); /* Safari and Chrome */
+  -o-transform:rotatey(-180deg); /* Opera */
+}
+
+.flipCard .card .front {
+  font-family: Georgia;
+  font-size: 24px;
+  text-align: center;
+  line-height: 160px;
+  background-image:url("https://cdn.vectorstock.com/i/1000v/22/10/vintage-love-romantic-background-vector-1612210.jpg");
+  border: 3px solid white;
+  color: black;
+  height: 420px;
+  padding-top: 50px;
+  padding:none;
+
+}
+.flipCard .card .back {
+  background-image:url("https://img.freepik.com/premium-photo/old-vintage-paper-with-rose-love-letter_661561-279.jpg");
+  border: 3px solid white;
+  text-align: center;
+  color: #1d0e36;
+  padding-top: 50px;
+  font-family: Georgia;
+  font-size: 16px;
+  height:auto;
+  padding: 16px 16px;
+}
+</style>
+</head>
+<body>
+<div class="flipCard"> 
+  <div class="card" onclick="this.classList.toggle('flipped');"> 
+    <div class="side front"><h3>All you
+	Need is
+	<b>LOVE</b></h3>
+	</div> 
+    <div class="side back">
+	  <p> We are opposite just like black and white</br>
+	  Still together we bloom bright</br>
+	  Even after a lot of fight</br>
+	  I always want you at my sight</p>
+	  <p>Opposite indeed attracts</br>
+	  You fix me whenever I distract</br>
+	  I want you on my every track</br>
+	  Thanks for being always my back</p>
+	  <p>I'm glad to have you with me</br>
+	  Every morning you are the first I want to see</br>
+	  Every evening we'll have annoying talks with tea</br>
+	  Doors of my heart got opend without any key</p>
+	  <p>Every time with you I lost in your universe</br>
+	  The moment become peaceful even if the condition is worst</br>
+	  We have a relationship of trust</br>
+	  You are my only first</p>
+	</div> 
+  </div> 
+</div> 
+</body>
+</html>
